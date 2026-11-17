@@ -22,13 +22,19 @@ Check the download against `SHA256SUMS.txt` from the same release:
 
 ## First run
 
-There is no site configuration in the package. On first run the Settings page opens; enter your
-controller address, JIRA URL, field names and status names there. Account names, passwords and
+There is no site configuration in the package. On first run, open Settings and enter the controller
+address and account and the JIRA URL and token, then press connect. The program lists the SSIDs and
+request types it finds and fills in the rest from a recent ticket.
+
+The launch link printed in the console works once. Press Enter in the console window for a new one. Account names, passwords and
 tokens are typed in each time the program starts and are never written to disk.
 
 ## Status
 
 The builds pass their test suite against simulated controller and JIRA responses. They have not
 yet been run against a production controller, so try a lab or a test SSID first.
+
+From v0.3.0 the code has also been through several rounds of independent review, with each finding
+fixed and covered by a regression test.
 
 Write-up: https://choiceguidelab.com/wifireg-wlc-mac-filter-registration/
