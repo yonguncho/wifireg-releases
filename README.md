@@ -3,7 +3,7 @@
 WiFiReg registers device MAC addresses on a Cisco AireOS wireless controller's local MAC filter.
 It pulls pending requests from JIRA, lists them, and registers the ones an operator selects.
 
-- Windows x64. No installer. Unzip and run `WiFiReg.exe`; it opens a page in your browser.
+- Windows x64. No installer. Run `WiFiReg.exe`; it opens a page in your browser.
 - The page is served on `127.0.0.1` only. Other machines cannot reach it.
 - Makes no outbound calls except to the controller (SSH) and the JIRA server you configure.
 - Supports Cisco AireOS controllers with local MAC filtering (developed against a 5520 on 8.10).
@@ -12,7 +12,16 @@ It pulls pending requests from JIRA, lists them, and registers the ones an opera
 
 ## Download
 
+Single file (replace it to update; starts about 15 seconds slower because it unpacks itself):
+
+https://github.com/yonguncho/wifireg-releases/releases/latest/download/WiFiReg.exe
+
+Folder version (starts faster):
+
 https://github.com/yonguncho/wifireg-releases/releases/latest/download/WiFiReg-win64.zip
+
+Settings and history are kept in `%LOCALAPPDATA%\WiFiReg`, not next to the program, so either form can be
+replaced with a newer one without losing them.
 
 Check the download against `SHA256SUMS.txt` from the same release:
 
