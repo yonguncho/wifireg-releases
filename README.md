@@ -12,7 +12,7 @@ It pulls pending requests from JIRA, lists them, and registers the ones an opera
 
 ## Download
 
-Single file (replace it to update; starts about 15 seconds slower because it unpacks itself):
+Single file (replace it to update; takes a few seconds to start because it unpacks itself):
 
 https://github.com/yonguncho/wifireg-releases/releases/latest/download/WiFiReg.exe
 
@@ -36,7 +36,8 @@ address and account and the JIRA URL and token, then press connect. The program 
 request types it finds and fills in the rest from a recent ticket.
 
 The launch link printed in the console works once. Press Enter in the console window for a new one. Account names, passwords and
-tokens are typed in each time the program starts and are never written to disk.
+tokens are not stored unless you tick the box in Settings. When stored, they are encrypted with Windows DPAPI
+for the signed-in Windows user and cannot be read on another PC or by another user.
 
 ## Status
 
